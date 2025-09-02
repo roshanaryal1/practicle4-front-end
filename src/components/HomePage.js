@@ -99,7 +99,7 @@ const HomePage = () => {
         <h3>Assignment Details</h3>
         <p><strong>Course:</strong> IX608001 | <strong>Assignment:</strong> Practical 4</p>
         <p><strong>Due:</strong> Tuesday 2nd September 8:30am | <strong>Weight:</strong> 5%</p>
-        <p><strong>Student:</strong> [Your Name] | <strong>Lecturer:</strong> Tariq Khan</p>
+        <p><strong>Student:</strong> [Roshan Aryal] | <strong>Lecturer:</strong> Tariq Khan</p>
       </div>
     </div>
   );
