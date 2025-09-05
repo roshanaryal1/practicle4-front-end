@@ -1,70 +1,188 @@
-# Getting Started with Create React App
+# Practical 4 Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend application for managing products and attendants with full CRUD operations and user authentication.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Product Management**: Create, read, update, and delete products
+- **Attendant Management**: Manage attendant information
+- **User Authentication**: Login/logout functionality
+- **Responsive Design**: Mobile-friendly interface
+- **API Integration**: Connects to backend REST API
+- **Routing**: Client-side navigation with React Router
+- **Testing**: Comprehensive test suite with Jest and React Testing Library
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React** 19.1.1 - Frontend framework
+- **React Router DOM** 7.8.2 - Client-side routing
+- **Axios** 1.11.0 - HTTP client for API calls
+- **React Scripts** 5.0.1 - Build tools and development server
+- **Jest** - Testing framework
+- **React Testing Library** - Component testing utilities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+- Backend API server running on `http://localhost:8080`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Installation
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/roshanaryal1/practicle4-front-end.git
+   cd practical4-frontend
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Environment Setup**
+   - Ensure your backend API is running on `http://localhost:8080`
+   - The frontend will connect to the backend automatically
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Running the Application
 
-### `npm run eject`
+### Development Mode
+```bash
+npm start
+```
+- Opens the app in development mode
+- Available at [http://localhost:3000](http://localhost:3000)
+- Hot reload enabled for development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Production Build
+```bash
+npm run build
+```
+- Builds the app for production to the `build` folder
+- Optimizes the build for best performance
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run All Tests
+```bash
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run Tests with Coverage
+```bash
+npm run test:coverage
+```
 
-## Learn More
+### Run Tests in Watch Mode
+```bash
+npm run test:watch
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Test Configuration
+- Jest configured for ESM module support
+- React Testing Library for component testing
+- Mocks configured for React Router DOM
+- Coverage reports available
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+practical4-frontend/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── AttendantPage.jsx     # Attendant management
+│   │   ├── Header.jsx            # Navigation header
+│   │   ├── Hello.jsx             # Welcome component
+│   │   ├── HomePage.jsx          # Home page
+│   │   ├── LoginPage.jsx         # Login form
+│   │   └── ProductPage.jsx       # Product management
+│   ├── services/
+│   │   └── apiService.js         # API communication
+│   ├── __mocks__/
+│   │   └── react-router-dom.js   # Router mocks for testing
+│   ├── App.js                    # Main app component
+│   ├── App.test.js              # App component tests
+│   ├── Hello.test.jsx           # Hello component tests
+│   └── index.js                 # App entry point
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 API Endpoints
 
-### Analyzing the Bundle Size
+The frontend communicates with the backend API for:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Authentication**: `/api/auth/login`, `/api/auth/logout`
+- **Products**: `/api/products` (GET, POST, PUT, DELETE)
+- **Attendants**: `/api/attendants` (GET, POST, PUT, DELETE)
 
-### Making a Progressive Web App
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Jest Configuration
+- ESM module transformation for `axios` and `react-router-dom`
+- React Testing Library setup
+- Coverage collection enabled
 
-### Advanced Configuration
+### Browser Support
+- **Production**: >0.2%, not dead, not op_mini all
+- **Development**: Latest Chrome, Firefox, and Safari
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Available Scripts
 
-### Deployment
+| Script | Description |
+|--------|-------------|
+| `npm start` | Start development server |
+| `npm run build` | Build for production |
+| `npm test` | Run tests once |
+| `npm run test:coverage` | Run tests with coverage |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run eject` | Eject from Create React App |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🐛 Troubleshooting
 
-### `npm run build` fails to minify
+### Common Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **API Connection Errors**
+   - Ensure backend server is running on `http://localhost:8080`
+   - Check CORS configuration on backend
+
+2. **Module Resolution Issues**
+   - Run `npm install` to ensure all dependencies are installed
+   - Clear node_modules and package-lock.json, then reinstall
+
+3. **Test Failures**
+   - Tests expect no backend server during testing
+   - API errors in test logs are normal and expected
+
+### Development Tips
+
+- Use `npm run test:watch` for continuous testing during development
+- Check browser console for detailed error messages
+- Ensure backend API is running before testing full functionality
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is part of a practical assignment and is for educational purposes.
+
+## 🆘 Support
+
+If you encounter any issues:
+1. Check the troubleshooting section above
+2. Ensure all prerequisites are met
+3. Verify backend API connectivity
+4. Check browser console for error details
+
+---
+
+**Note**: This frontend application requires the corresponding backend API to be running for full functionality. The tests are designed to work independently of the backend server.
