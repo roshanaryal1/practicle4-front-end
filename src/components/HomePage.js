@@ -80,27 +80,6 @@ const HomePage = () => {
           </Link>
         </div>
       </div>
-
-      {/* Quick Info */}
-      <div className="page-container" style={{ marginTop: '2rem', background: '#f8f9fa' }}>
-        <h3>Application Info</h3>
-        <p><strong>Backend:</strong> Spring Boot 3.1.0 + H2 Database</p>
-        <p><strong>Frontend:</strong> React 18+ with React Router</p>
-        <p><strong>Database Console:</strong> 
-          <a href="http://localhost:8080/practical4-backend/h2-console" target="_blank" rel="noopener noreferrer">
-            H2 Console
-          </a>
-        </p>
-        <p><strong>API Base:</strong> http://localhost:8080/practical4-backend/api</p>
-      </div>
-
-      {/* Assignment Info */}
-      <div className="page-container" style={{ marginTop: '2rem', background: '#e3f2fd' }}>
-        <h3>Assignment Details</h3>
-        <p><strong>Course:</strong> IX608001 | <strong>Assignment:</strong> Practical 4</p>
-        <p><strong>Due:</strong> Tuesday 2nd September 8:30am | <strong>Weight:</strong> 5%</p>
-        <p><strong>Student:</strong> [Roshan Aryal] | <strong>Lecturer:</strong> Tariq Khan</p>
-      </div>
     </div>
   );
 };

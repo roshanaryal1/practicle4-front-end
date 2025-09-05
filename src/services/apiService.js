@@ -187,7 +187,7 @@ export const apiUtils = {
   // Test backend connection
   testConnection: async () => {
     try {
-      const response = await api.get('/products');
+      await api.get('/products');
       return { success: true, message: 'Backend connection successful' };
     } catch (error) {
       return { 

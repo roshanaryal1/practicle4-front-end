@@ -24,7 +24,7 @@ function App() {
         <header className="app-header">
           <h1>Practical 4 - Full Stack Application</h1>
           <p>Spring Boot Backend + React Frontend</p>
-          <p>IX608001 Intermediate Application Development Concepts</p>
+          <p> Intermediate Application Development Concepts</p>
         </header>
 
         {/* Navigation Menu */}
@@ -66,9 +66,9 @@ function App() {
 
         {/* Application Footer */}
         <footer className="app-footer">
-          <p>© 2025 Otago Polytechnic Auckland International Campus</p>
-          <p>IX608001 Intermediate Application Development Concepts - Practical 4</p>
-          <p>Full Stack Application: Spring Boot + React + H2 Database</p>
+          <p>© ROSHAN ARYAL</p>
+          <p>Intermediate Application Development Concepts - Practical 4</p>
+          <p>Full Stack Application: Spring Boot + React Database</p>
         </footer>
       </div>
     </Router>
